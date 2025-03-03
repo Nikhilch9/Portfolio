@@ -878,7 +878,7 @@ pre {
 .underline {
   width: 100%;
   height: 4px;
-  background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%,rgb(238, 238, 36) 50%, #ffbd39 100%);
+  background-image: linear-gradient(to right, rgb(150, 150, 150) 0%, rgb(160, 160, 125) 20%,rgb(140, 238, 36) 30%, #ffbd39 70%);
   margin-top: 5px;
   opacity: 50%; }
   .col-md-1 {
@@ -8487,7 +8487,7 @@ h1, h2, h3, h4, h5,
               width: 85%; } }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-third {
-              width: 100%;
+              width: 50%;
               z-index: 0; }
               .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
                 opacity: .3; }
