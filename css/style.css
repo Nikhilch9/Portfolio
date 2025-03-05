@@ -8482,24 +8482,23 @@ h1, h2, h3, h4, h5,
             right: 0;
             background: #000000;
             opacity: 0; }
-            @media (max-width: 1199.98px) {
-              .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 70%; /* Reduce from 85% */
-              }
-            }
-            
-            @media (max-width: 991.98px) {
-              .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 40%; /* Reduce from 50% */
-              }
-            }
-            
-            @media (max-width: 768px) {
-              .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 30%; /* Reduce further for small screens */
-              }
-            }
-            
+          @media (max-width: 1199.98px) {
+            .owl-carousel.home-slider .slider-item .slider-text .one-third {
+              width: 85%; } }
+          @media (max-width: 991.98px) {
+            .owl-carousel.home-slider .slider-item .slider-text .one-third {
+              width: 50%;
+              z-index: 0; }
+              .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
+                opacity: .3; }
+              .owl-carousel.home-slider .slider-item .slider-text .one-third:after {
+                opacity: 0; } }
+        .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+          width: 50%;
+          position: relative; }
+          @media (min-width: 768px) {
+            .owl-carousel.home-slider .slider-item .slider-text .one-forth {
+              position: absolute;
               top: 0;
               left: 0;
               bottom: 0;
