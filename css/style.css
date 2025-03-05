@@ -8484,41 +8484,28 @@ h1, h2, h3, h4, h5,
             opacity: 0; }
             @media (max-width: 1199.98px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 70%; /* Reduced from 85% */
+                width: 70%; /* Reduce from 85% */
               }
             }
             
             @media (max-width: 991.98px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 40%; /* Reduced from 50% */
+                width: 40%; /* Reduce from 50% */
               }
             }
             
             @media (max-width: 768px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-third {
-                width: 30%; /* Reduced further for small screens */
+                width: 30%; /* Reduce further for small screens */
               }
             }
             
-            /* Ensure the image scales properly */
-            .owl-carousel.home-slider .slider-item img {
-              max-width: 100%; /* Ensures the image doesn't exceed its container */
-              height: auto; /* Maintains aspect ratio */
-              display: block; /* Removes extra space below the image */
-              margin: 0 auto; /* Centers the image */
-            }
-            
-            /* Container for the slider */
-            .owl-carousel.home-slider .slider-item {
-              position: relative;
               top: 0;
               left: 0;
               bottom: 0;
               right: 0;
-              max-width: 1200px; /* Limits the maximum width */
-              width: 100%; /* Ensures it takes full width on smaller screens */
-              margin: 0 auto; /* Centers the container */
-            }
+              width: 1200px;
+              margin: 0 auto; } }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               width: 100%;
