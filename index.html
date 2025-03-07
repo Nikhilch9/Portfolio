@@ -315,10 +315,10 @@
 	
 					<!-- Resume Display Section -->
 					<div id="resumeModal" class="resume-container" style="display: none;">
-						<div class="resume-page">
+						<div class="resume-page" onclick="zoomImage(this)">
 							<img src="images/NIKHIL CHAGI CV_page-0001.jpg" alt="Resume Page 1">
 						</div>
-						<div class="resume-page">
+						<div class="resume-page" onclick="zoomImage(this)">
 							<img src="images/NIKHIL CHAGI CV_page-0002.jpg" alt="Resume Page 2">
 						</div>
 					</div>
@@ -332,11 +332,19 @@
 			var resume = document.getElementById("resumeModal");
 			if (resume.style.display === "none") {
 				resume.style.display = "flex";
-				resume.classList.add("zoom-in");
 			} else {
 				resume.style.display = "none";
-				resume.classList.remove("zoom-in");
 			}
+		}
+	
+		function zoomImage(element) {
+			// Remove zoom effect from all pages
+			document.querySelectorAll(".resume-page").forEach(page => {
+				page.classList.remove("zoomed");
+			});
+	
+			// Apply zoom effect to the clicked page
+			element.classList.add("zoomed");
 		}
 	</script>
 	
@@ -348,17 +356,24 @@
 			gap: 20px;
 			transition: transform 0.5s ease-in-out;
 		}
-		.resume-page img {
+		.resume-page {
 			width: 45%;
+			cursor: pointer;
+			transition: transform 0.5s ease-in-out;
+		}
+		.resume-page img {
+			width: 100%;
 			border: 2px solid #007bff;
 			border-radius: 10px;
 			box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
-			transition: transform 0.5s ease-in-out;
 		}
-		.zoom-in {
-			transform: scale(1.05);
+		.zoomed {
+			transform: scale(1.8);
+			z-index: 10;
+			position: relative;
 		}
 	</style>
+	
 	
 
 		<div class="row">
